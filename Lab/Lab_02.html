@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <title>小學生課表</title>
+    <style>
+        #en{
+            background-color: rgb(229, 182, 210);
+            color: hotpink;
+        }
+        #math{
+            background-color: rgb(176, 225, 241);
+            color: rgb(61, 199, 245);
+        }
+        #web{
+            background-color: rgb(179, 102, 77);
+            color: rgb(182, 65, 29);
+        }
+        #python{
+            background-color: rgb(255, 245, 188);
+            color:gold;
+        }
+        tbody tr th{
+            color: darkgreen;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(238, 230, 212);font-family: 微軟正黑體;">
+    <table style="background-color:rgb(245, 187, 111); width: 1000px;height: 500px;text-align: center;", border="1">
+        <caption style="color: rgb(51, 59, 163);"><b><i><u>小學生課表</u></i></b></caption>
+        <thead>
+            <tr style="color: darkgreen;">
+                <th></th><!--空白-->
+                <th>星期一</th> 
+                <th>星期二</th>
+                <th>星期三</th>
+                <th>星期四</th>
+                <th>星期五</th>
+            </tr>
+        </thead>
+        <tbody >
+            <tr >
+                <th>早上</th>
+                <td id="en">英文</td>
+                <td id="math">數學</td>
+                <td id="web">網頁設計</td>
+                <td style="background-color: rgb(47, 119, 113);">無</td>
+                <td id="python">程式語言</td>
+            </tr>
+            <tr>
+                <th>中午</th>
+                <td style="background-color: rgb(84, 173, 169); color: rgb(6, 94, 89);", colspan="5">吃飯午休</td>
+            </tr>
+            <tr>
+                <th>下午</th>
+                <td id="web">網頁設計</td>
+                <td style="background-color: rgb(228, 253, 191);color:greenyellow;">體育</td>
+                <td id="en">英文</td>
+                <td id="math">數學</td>
+                <td id="python">程式語言</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
