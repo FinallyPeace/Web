@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <title>小學生課表</title>
+    <style>
+        body {
+            background-color: rgb(238, 230, 212);
+            font-family: 微軟正黑體;
+        }
+        
+        table {
+            background-color: rgb(245, 187, 111);
+            width: 1000px;
+            height: 500px;
+            text-align: center;
+        }
+        
+        caption {
+            color: rgb(51, 59, 163);
+        }
+        
+        thead tr {
+            color: darkgreen;
+        }
+        
+        .en {
+            background-color: rgb(229, 182, 210);
+            color: hotpink;
+        }
+        
+        .math {
+            background-color: rgb(176, 225, 241);
+            color: rgb(61, 199, 245);
+        }
+        
+        .web {
+            background-color: rgb(179, 102, 77);
+            color: rgb(182, 65, 29);
+        }
+        
+        .python {
+            background-color: rgb(255, 245, 188);
+            color: gold;
+        }
+        
+        #rest {
+            background-color: rgb(133, 219, 172);
+            color: rgb(6, 94, 89);
+        }
+        
+        #phy {
+            background-color: rgb(228, 253, 191);
+            color: greenyellow;
+        }
+        
+        #none {
+            background-color: rgb(104, 123, 177);
+        }
+        
+        tbody tr th {
+            color: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <caption><b><i><u><h1>小學生課表</h1></u></i></b></caption>
+        <thead>
+            <tr>
+                <th></th>
+                <!--空白-->
+                <th>星期一</th>
+                <th>星期二</th>
+                <th>星期三</th>
+                <th>星期四</th>
+                <th>星期五</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>早上</th>
+                <td class="en">英文</td>
+                <td class="math">數學</td>
+                <td class="web">網頁設計</td>
+                <td id="none">無</td>
+                <td class="python">程式語言</td>
+            </tr>
+            <tr>
+                <th>中午</th>
+                <td id="rest" , colspan="5" ;>吃飯午休</td>
+            </tr>
+            <tr>
+                <th>下午</th>
+                <td class="web">網頁設計</td>
+                <td id="phy">體育</td>
+                <td class="en">英文</td>
+                <td class="math">數學</td>
+                <td class="python">程式語言</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
