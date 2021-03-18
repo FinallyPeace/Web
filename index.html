@@ -27,6 +27,9 @@
             padding: 14px 16px;
             text-decoration: none;
         }
+        a[for$="n"] {
+            float: right;
+        }
         
         nav a:hover {
             background-color: black;
@@ -55,6 +58,7 @@
                 width: 100%;
             }
         }*/
+        
     </style>
 </head>
 
@@ -63,18 +67,20 @@
         <a href="#home">首頁</a>
         <a href="#about">關於</a>
         <a href="mailto:test@gmail.com">聯絡</a>
+        <a for="Sign in">登入</a>
+        <a for="en">EN</a>
     </nav>
 
     <div class="row">
         <div class="col">
             <h1>按<span style="color: limegreen;">水管</span>進入Exercise<br></h1>
-            <a href="Exercise/index.html" , style="padding: 15px;">
+            <a href="Exercise/index.html" style="padding: 15px;">
                 <img src="image/pipe.png " height="100" width="100">
             </a>
         </div>
         <div class="col">
             <h1>按<span style="color:red">瑪利歐</span>進入Lab<br></h1>
-            <a href="Lab/index.html" , style="padding: 35px;">
+            <a href="Lab/index.html" style="padding: 35px;">
                 <img src="image/Mario.png" height="100" width="100">
             </a>
         </div>
@@ -102,9 +108,6 @@
         </tbody>
     </table>
     
-    <footer>
-        
-    </footer>
 </body>
 
 </html>
