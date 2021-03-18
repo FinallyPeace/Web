@@ -11,12 +11,15 @@
         }
         
         body {
-            margin: 0;
+            font-family: 微軟正黑體, 新細明體;
+            padding: 10px;
+            background-color: #f1f1f1;
         }
         
         nav {
             background-color: #333;
             overflow: hidden;
+            height: 50px;
         }
         
         nav a {
@@ -24,22 +27,22 @@
             display: block;
             color: rgb(255, 255, 255);
             text-align: center;
-            padding: 14px 16px;
+            padding: 14px 16px 14px 16px;
             text-decoration: none;
         }
-        a[for$="n"] {
+        
+        a.nav_right {
             float: right;
         }
         
-        nav a:hover {
-            background-color: black;
-            color: #ffffff;
+        .icons {
+            width: 18px;
+            height: 20px;
         }
         
-        .col {
-            float: left;
-            width: 50%;
-            padding: 15px;
+        nav a:hover {
+            background-color: grey;
+            color: black;
         }
         
         .row {
@@ -52,6 +55,12 @@
             display: table;
             clear: both;
         }
+        
+        .col {
+            float: left;
+            width: 50%;
+            padding: 15px;
+        }
         /* Responsive layout - makes the three columns stack on top of each other instead of next to each other
         @media screen and (max-width:600px) {
             .column {
@@ -59,6 +68,44 @@
             }
         }*/
         
+        .leftcol {
+            float: left;
+            width: 75%;
+        }
+        
+        .rightcol {
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+        }
+        
+        .card {
+            background-color: white;
+            padding: 15px 20px 15px 20px;
+            margin-top: 20px;
+        }
+        
+        .card img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .content::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        footer {
+            overflow: hidden;
+            margin-top: 20px;
+            background-color: gray;
+        }
+        
+        footer p {
+            float: right;
+            padding: 14px 16px;
+        }
     </style>
 </head>
 
@@ -67,8 +114,13 @@
         <a href="#home">首頁</a>
         <a href="#about">關於</a>
         <a href="mailto:test@gmail.com">聯絡</a>
-        <a for="Sign in">登入</a>
-        <a for="en">EN</a>
+        <a class="nav_right">登入</a>
+        <a class="nav_right">
+            <img class="icons" src="image/map_icon.png">
+        </a>
+        <a class="nav_right">
+            <img class="icons" src="image/search_icon.png">
+        </a>
     </nav>
 
     <div class="row">
@@ -86,28 +138,54 @@
         </div>
     </div>
 
-    <hr>
+    <div class="content">
+        <div class="leftcol">
+            <div class="card">
+                <h1>日式街道</h1>
+                <h5>天氣: 雪<br> Dec 13, 2020</h5>
+                <div>
+                    <img src="image/acgn_jpstreet.jpg">
+                </div>
+            </div>
+            <div class="card">
+                <h1>迪士尼樂園</h1>
+                <h5>天氣: 雪<br> Dec 12, 2020</h5>
+                <div>
+                    <img src="image/acgn_castle.jpg">
+                </div>
+            </div>
+            <div class="card">
+                <h1>芒草鐵道</h1>
+                <h5>天氣: 涼<br> Oct 31, 2020</h5>
+                <div>
+                    <img src="image/acgn_fall.jpg">
+                </div>
+            </div>
+            <div class="card">
+                <h1>雨中拾穗</h1>
+                <h5>天氣: 雨<br> Sep 27, 2020</h5>
+                <div>
+                    <img src="image/acgn_planting.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="rightcol">
+            <div class="card">
+                <h1>關於我</h1>
+                <p>ig: xxxxxxxx</p>
+            </div>
+            <div class="card">
+                <h1>人氣統計</h1>
+                <p>今日人氣: x<br> 總人氣: xxx
+                </p>
+            </div>
+        </div>
+    </div>
 
-    <table border="1">
-        <caption><b>道具欄</b></caption>
-        <thead>
-            <tr>
-                <th>普通</th>
-                <th>進階</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><img src="image/coin.jpg" alt="金幣" style="width: 100px; height: 100px;"></td>
-                <td><img src="image/fireFolwer.png" alt="火焰花" style="width: 100px; height: 100px;"></td>
-            </tr>
-            <tr>
-                <td><img src="image/mushroom.png" alt="蘑菇" style="width: 100px; height: 100px;"></td>
-                <td><img src="image/star.png" alt="星星" style="width: 100px; height: 100px;"></td>
-            </tr>
-        </tbody>
-    </table>
-    
+    <footer>
+        <p>法律顧問: xxx律師事務所</p>
+        <p>版權資訊: 不可商用</p>
+    </footer>
 </body>
 
 </html>
