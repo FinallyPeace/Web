@@ -1,10 +1,9 @@
 # Web 主線2
-# Web 分支2
 Web 基礎程式設計
-## This is Dom
+## Northern Lights
 ```bash
-茶茶丸
+北極光
 ```
-![茶茶丸](./image/Dom.jpg)
-## No Dom
-![圖片損毀看不到茶茶丸]()
+![北極光](./image/acnh_northernlight.jpg)
+## No Lights
+![圖片損毀看不到極光]()
