@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+        
+        body {
+            background-image: url("image/bg.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: 'Press Start 2P', cursive;
+            text-shadow: 2px 2px chartreuse;
+        }
+        
+        Header {
+            border: 2px solid rgb(0, 0, 0);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        header:hover {
+            background-color: chartreuse;
+        }
+        
+        section {
+            display: flex;
+        }
+        
+        nav {
+            width: 20%;
+        }
+        
+        nav #fix {
+            width: 20%;
+            border: 2px solid rgb(0, 0, 0);
+            padding: 20px;
+            position: fixed;
+        }
+        
+        #fix:hover {
+            background-color: chartreuse;
+        }
+        
+        li {
+            list-style: none;
+            padding-bottom: 20px;
+        }
+        
+        li a {
+            color: black;
+            
+        }
+        
+        li a:hover {
+            color: white
+        }
+        
+        article {
+            margin-left: 20px;
+            width: 80%;
+        }
+        
+        .card {
+            margin-bottom: 20px;
+            border: 2px solid rgb(0, 0, 0);
+            padding: 0px 20px;
+        }
+        
+        .card img {
+            margin-bottom: 20px;
+            width: 90%;
+        }
+        
+        footer {
+            border: 2px solid rgb(0, 0, 0);
+            text-align: center;
+        }
+        
+        footer:hover {
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <Header id="top">
+        <h1>Header</h1>
+    </Header>
+
+    <section>
+        <nav>
+            <div id="fix">
+                <h2>Nav</h2>
+                <ul>
+                    <li><a href="#top">Top</a></li>
+                    <li><a href="#A">Sakula</a></li>
+                    <li><a href="#B">Hydrangea</a></li>
+                    <li><a href="#C">Temple</a></li>
+                </ul>
+            </div>
+        </nav>
+        <article>
+            <div class="card" id="A">
+                <h2>Sakula</h2>
+                <img src="image/sakula.gif">
+            </div>
+            <div class="card" id="B">
+                <h2>Hydrangea</h2>
+                <img src="image/hydrangea.gif">
+            </div>
+            <div class="card" id="C">
+                <h2>Temple</h2>
+                <img src="image/temple.gif">
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+
+</html>
