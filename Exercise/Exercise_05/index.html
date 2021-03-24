@@ -42,8 +42,9 @@
         
         nav #fix {
             width: 20%;
+            height: fit-content;
             border: 2px solid rgb(0, 0, 0);
-            padding: 20px;
+            padding-left: 10px;
             position: fixed;
         }
         
@@ -51,17 +52,13 @@
             background-color: chartreuse;
         }
         
-        li {
-            list-style: none;
-            padding-bottom: 20px;
-        }
-        
-        li a {
+        a {
+            display: block;
             color: black;
-            
+            margin-bottom: 20px;
         }
         
-        li a:hover {
+        a:hover {
             color: white
         }
         
@@ -78,7 +75,7 @@
         
         .card img {
             margin-bottom: 20px;
-            width: 90%;
+            width: 100%;
         }
         
         footer {
@@ -101,12 +98,10 @@
         <nav>
             <div id="fix">
                 <h2>Nav</h2>
-                <ul>
-                    <li><a href="#top">Top</a></li>
-                    <li><a href="#A">Sakula</a></li>
-                    <li><a href="#B">Hydrangea</a></li>
-                    <li><a href="#C">Temple</a></li>
-                </ul>
+                <a href="#top">Top</a>
+                <a href="#A">Sakula</a>
+                <a href="#B">Hydrangea</a>
+                <a href="#C">Temple</a>
             </div>
         </nav>
         <article>
