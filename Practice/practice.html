@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            font-size: 3rem;
+            text-align: center;
+        }
+        header {
+            background-color: black;
+            color: white;
+        }
+        .content {
+            display: flex;
+            flex-grow: 1;
+        }
+        nav {
+            background-color: rgb(60, 133, 133);
+            width: 25vw;
+        }
+        main {
+            display: flex;
+            background-color: khaki;
+            width: 50vw;
+            flex-direction: column;
+        }
+        .words {
+            flex-grow: 1;
+        }
+
+        aside {
+            background-color: lavender;
+            width: 25vw;
+        }
+
+        footer {
+            background-color: grey;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>Header</header>
+
+    <div class="content">
+        <nav>Nav</nav>
+        <main>
+            Main
+            <div class="words" style="background-color: chocolate;">文章</div>
+            <div class="words" style="background-color: coral">文章</div>
+        </main>
+        <aside>Aside</aside>
+    </div>
+
+    <footer>Footer</footer>
+</body>
+
+</html>

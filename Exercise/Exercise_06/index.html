@@ -7,25 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {
+        body {
+            display: flex;
+            flex-direction: column;
             margin: 0px;
         }
         
         nav {
             display: flex;
             background-color: black;
-            overflow: hidden;
-            width: 100%;
-            height: 50px;
-            position: fixed;
-            top: 0px;
+            height: 10vh;
         }
         
         nav a {
-            display: block;
             color: white;
             text-align: center;
-            padding: 15px;
+            padding: 25px 15px;
             text-decoration: none;
         }
         
@@ -34,12 +31,16 @@
         }
         
         article {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-grow: 1;
             background-image: url("../../image/acnh_castle.jpg");
             background-position: center;
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-size: cover;
-            height: 1000px;
+            height: 70vh;
         }
         
         article h1 {
@@ -51,9 +52,7 @@
             background-color: rgb(78, 78, 78);
             text-align: center;
             padding: 15px;
-            width: 100%;
-            position: fixed;
-            bottom: 0px;
+            height: 10vh;
         }
     </style>
 </head>
