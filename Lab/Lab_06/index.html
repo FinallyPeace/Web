@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <title>選課頁面</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            height: 100vh;
+            background-color: rgb(238, 230, 212);
+            font-family: 'Noto Sans TC', sans-serif;
+            display: grid;
+            grid-template: auto 1fr auto / minmax(100px, max-content) auto;
+        }
+        
+        header,
+        footer {
+            text-align: center;
+            font-size: 3rem;
+            background-color: black;
+            color: white;
+            grid-column: 1 / -1;
+        }
+        
+        nav {
+            grid-column: 1 / 2;
+            background-color: rgb(245, 187, 111);
+        }
+        
+        nav ul {
+            list-style: none;
+            text-align: left;
+        }
+        
+        nav li a {
+            color: black;
+        }
+        
+        main {
+            grid-column: 2 / 3;
+            display: flex;
+            flex-flow: column nowrap;
+        }
+        
+        #bar {
+            flex: none;
+            justify-content: flex-start;
+        }
+        
+        main div {
+            display: flex;
+            justify-content: center;
+            flex: auto;
+        }
+        
+        table {
+            justify-self: center;
+            background-color: white;
+            text-align: center;
+            /* 摺疊為單一邊框 */
+            border-collapse: collapse;
+            width: 80%;
+            height: 80%;
+            text-align: center;
+        }
+        
+        table tr {
+            color: darkgreen;
+        }
+        
+        table th,
+        table td {
+            border: 3px solid darkgreen
+        }
+        
+        caption {
+            color: rgb(51, 59, 163);
+        }
+        
+        .en {
+            background-color: rgb(229, 182, 210);
+            color: hotpink;
+        }
+        
+        .en:hover {
+            color: rgb(229, 182, 210);
+            background-color: hotpink;
+        }
+        
+        .math {
+            background-color: rgb(176, 225, 241);
+            color: rgb(61, 199, 245);
+        }
+        
+        .math:hover {
+            color: rgb(176, 225, 241);
+            background-color: rgb(61, 199, 245);
+        }
+        
+        .web {
+            background-color: rgb(179, 102, 77);
+            color: rgb(182, 65, 29);
+        }
+        
+        .web:hover {
+            color: rgb(179, 102, 77);
+            background-color: rgb(182, 65, 29);
+        }
+        
+        .python {
+            background-color: rgb(255, 245, 188);
+            color: gold;
+        }
+        
+        .python:hover {
+            color: rgb(255, 245, 188);
+            background-color: gold;
+        }
+        
+        #rest {
+            background-color: rgb(156, 214, 182);
+            color: rgb(6, 219, 89);
+        }
+        
+        #rest:hover {
+            color: rgb(156, 214, 182);
+            background-color: rgb(6, 219, 89);
+        }
+        
+        #phy {
+            background-color: rgb(228, 253, 191);
+            color: greenyellow;
+        }
+        
+        #phy:hover {
+            color: rgb(228, 253, 191);
+            background-color: greenyellow;
+        }
+        
+        #none {
+            background-color: rgb(104, 123, 177);
+            color: rgb(40, 79, 177)
+        }
+        
+        #none:hover {
+            color: rgb(104, 123, 177);
+            background-color: rgb(40, 79, 177)
+        }
+    </style>
+    <SCRIPT language="JavaScript">
+        function change() {
+            window.alert('非選課時段，下次請早！');
+        }
+    </SCRIPT>
+</head>
+
+<body>
+    <header>選課系統</header>
+    <nav>
+        <div>
+            <h3 style="text-align: center;">登入資訊</h3>
+            <ul>
+                <li>學號: D0123456</li>
+                <li>姓名: Lien Jia Lin</li>
+                <li>班級: 資訊一甲</li>
+                <li>學分上限: 25</li>
+                <li>學分下限: 12</li>
+            </ul>
+        </div>
+        <div>
+            <p style="text-align: left; padding-left: 10px;">選課說明</p>
+            <ol>
+                <li>可在課程公告查看選課代碼及課程資訊</li>
+                <li>點選已選課表科目名稱，可顯示課程顏色</li>
+            </ol>
+        </div>
+        <div>
+            <p style="text-align: left; padding-left: 10px;">問題反應或建議</p>
+            <ul>
+                <li>聯或電話: 04-1234-5678</li>
+                <li><a href="mailto:abcdefg@fcu.edu.tw">E-mail: abcdefg@fcu.edu.tw</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div id="bar">
+            <input type="button" value="課程公告" onclick="change();">
+            <input type="button" value="我的課表">
+        </div>
+        <div>
+            <table border="1">
+                <caption><b><h4>110年度 上學期</h4></b></caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>星期一</th>
+                        <th>星期二</th>
+                        <th>星期三</th>
+                        <th>星期四</th>
+                        <th>星期五</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>早上</th>
+                        <td class="en">英文</td>
+                        <td class="math">數學</td>
+                        <td class="web">網頁設計</td>
+                        <td id="none">無</td>
+                        <td class="python">程式語言</td>
+                    </tr>
+                    <tr>
+                        <th>中午</th>
+                        <td id="rest" , colspan="5" ;>吃飯午休</td>
+                    </tr>
+                    <tr>
+                        <th>下午</th>
+                        <td class="web">網頁設計</td>
+                        <td id="phy">體育</td>
+                        <td class="en">英文</td>
+                        <td class="math">數學</td>
+                        <td class="python">程式語言</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+    <footer>Footer</footer>
+</body>
+
+</html>
