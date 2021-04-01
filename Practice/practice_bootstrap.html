@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,35 +11,127 @@
 
     <title>Hello, world!</title>
     <style>
-        div > div {
+        body {
+            text-align: center;
+        }
+        
+        div>div>div {
             margin: 2px;
             background-color: skyblue;
             border: 2px solid black;
         }
-        .green{
+        
+        .green {
             background-color: springgreen;
         }
+        
         .w {
             background-color: snow;
         }
+        
+        .btn {
+            margin: 2px;
+        }
     </style>
-    
-  </head>
-  <body>
-    <div class="container d-flex flex-column">
-        <div class="green p-2 m-2 bd-highlight">Flex item 1</div>
-        <div class="p-2 m-2 bd-highlight">Flex item 2</div>
-        <div class="p-2 m-2 bd-highlight d-flex flex-row flex-wrap text-center">
-            <div class="w p-2 mr-auto col-4 bd-highlight">4</div>
-            <div class="w p-2 mr-auto col-8 bd-highlight">8</div>
-            <div class="w p-2 ml-auto col-2 bd-highlight">2</div>
-            <div class="w p-2 ml-auto col-6 ml-auto bd-highlight">6</div>
-            <div class="w p-2 ml-2 col-1 bd-highlight">1</div>
-            <div class="w p-2 ml-2 col-1 bd-highlight">1</div>
+</head>
+
+<body>
+    <div class="container-md">
+        <div class="d-flex flex-row justify-content-center">
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-dark">Dark</button>
+            <button type="button" class="btn btn-link">Link</button>
+        </div>
+        <div class="d-flex flex-column">
+            <div class="p-2 m-2 bd-highlight">Flex item 1</div>
+            <div class="green p-2 m-2 bd-highlight">Flex item 2</div>
+            <div class="p-2 m-2 bd-highlight d-flex flex-row flex-wrap">
+                <div class="w p-2 mr-auto col-4 bd-highlight">4</div>
+                <div class="w p-2 mr-auto col-8 bd-highlight">8</div>
+                <div class="w p-2 ml-auto col-2 bd-highlight">2</div>
+                <div class="w p-2 ml-auto col-6 ml-auto bd-highlight">6</div>
+                <div class="w p-2 ml-2 col-1 bd-highlight">1</div>
+                <div class="w p-2 ml-2 col-1 bd-highlight">1</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="p-2 m-2 col-sm">col-sm</div>
+            <div class="p-2 m-2 col-md">col-md</div>
+            <div class="p-2 m-2 col-lg">col-lg</div>
+            <div class="p-2 m-2 col-xl">col-xl</div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="p-2 m-2 col-sm-5">
+                <div class="card">
+                    <img src="/Web/image/acnh_jpstreet.jpg" class="card-img-top" alt="圖片損毀">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">An item</li>
+                    </ul>
+                    <div class="card-body d-flex justify-content-around">
+                        <a href="" class="btn btn-success w-25">Yes</a>
+                        <a href="" class="btn btn-danger w-25">No</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-2 m-2 col-sm-5">
+                <div class="card">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="">Active</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="">Disable</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <img src="" class="card-img">
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="" class="btn btn-secondary btn-block">Button</a>
+                    </div>
+                </div>
+                <div class="mt-5 card">
+                  <div class="card-header">
+                      <ul class="nav nav-pills card-header-pills">
+                          <li class="nav-item">
+                              <a class="nav-link active" href="">Active</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="">Link</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link disabled" href="">Disable</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="card-body">
+                      <img src="" class="card-img">
+                      <h5 class="card-title">Card Title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="" class="btn btn-secondary btn-block">Button</a>
+                  </div>
+              </div>
+            </div>
         </div>
     </div>
-
-    
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -52,5 +145,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
     -->
-  </body>
+</body>
+
 </html>
