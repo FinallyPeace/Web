@@ -2,13 +2,14 @@
 <html lang="en">
 
 <head>
-    <title>Lab 07</title>
+    <title>Lab 08</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <style>
         body {
             height: 100vh;
@@ -28,19 +29,8 @@
             background-color: rgb(245, 187, 111);
         }
         
-        nav ul {
-            list-style: none;
-            text-align: left;
-        }
-        
         nav li a {
             color: black;
-        }
-        
-        table {
-            justify-self: center;
-            border-collapse: collapse;
-            height: 80%;
         }
         
         .table tr {
@@ -57,42 +47,36 @@
         }
         
         .en:hover {
-            color: rgb(229, 182, 210);
             background-color: hotpink;
         }
         
         .math:hover {
-            color: rgb(176, 225, 241);
             background-color: rgb(61, 199, 245);
         }
         
         .web:hover {
-            color: skyblue;
             background-color: darkblue;
         }
         
         .python:hover {
-            color: rgb(255, 245, 188);
             background-color: gold;
         }
         
         #rest:hover {
-            color: rgb(156, 214, 182);
             background-color: rgb(6, 219, 89);
         }
         
         #phy {
-            color: greenyellow;
+            color: rgb(33, 51, 7);
             background-color: rgb(228, 253, 191);
         }
         
         #phy:hover {
             color: rgb(228, 253, 191);
-            background-color: greenyellow;
+            background-color: rgb(33, 51, 7);
         }
         
         #none:hover {
-            color: darkgrey;
             background-color: gray;
         }
     </style>
@@ -106,9 +90,9 @@
 <body class="container-fluid m-0 p-0 d-flex flex-column">
     <header class="text-center">選課系統</header>
     <div class="row m-0 p-0 flex-grow-1 d-flex flex-row">
-        <nav class="col-3 col-md-4 col-lg-3">
+        <nav class="col-12 col-md-4 col-lg-3">
             <div>
-                <h3 style="text-align: center;">登入資訊</h3>
+                <h3 style="text-align: center;"><i class="m-2 fas fa-user"></i>登入資訊</h3>
                 <ul class="p-2 list list-unstyled">
                     <li>學號: D0123456</li>
                     <li>姓名: Lien Jia Lin</li>
@@ -133,12 +117,12 @@
             </div>
         </nav>
 
-        <main class="col-8 col-md-8 col-lg-9 d-flex flex-column" style="height: 20vh;">
+        <main class="col-12 col-md-8 col-lg-9 d-flex flex-column">
             <div id="bar">
                 <input type="button" value="課程公告" onclick="change();">
                 <input type="button" value="我的課表">
             </div>
-            <div class="d-flex justify-content-center" style="height: 80vh;">
+            <div class="d-flex justify-content-center">
                 <table class="m-5 table table-bordered table-light align-middle text-center ">
                     <caption>
                         <h4 class="text-center">110年度 上學期</h4>
@@ -156,23 +140,23 @@
                     <tbody>
                         <tr>
                             <th scope="row" class="text-center">早上</th>
-                            <td class="en table-danger text-danger">英文</td>
-                            <td class="math table-info text-info">數學</td>
-                            <td class="web table-primary text-primary">網頁設計</td>
-                            <td id="none" class="table-secondary text-secondary">無</td>
-                            <td class="python table-warning text-warning">程式語言</td>
+                            <td class="en table-danger text-danger"><i class="mr-2 fas fa-book"></i>英文</td>
+                            <td class="math table-info text-info"><i class="mr-2 fas fa-calculator"></i>數學</td>
+                            <td class="web table-primary text-primary"><i class="mr-2 fas fa-atlas"></i>網頁設計</td>
+                            <td id="none" class="table-secondary text-secondary"><i class="mr-2 fas fa-times"></i>無</td>
+                            <td class="python table-warning text-warning"><i class="mr-2 fab fa-python"></i>程式語言</td>
                         </tr>
                         <tr>
                             <th scope="row">中午</th>
-                            <td id="rest" colspan="5" class="table-success text-success">吃飯午休</td>
+                            <td id="rest" colspan="5" class="table-success text-success"><i class="mr-2 fas fa-utensils"></i>吃飯午休</td>
                         </tr>
                         <tr>
                             <th scope="row">下午</th>
-                            <td class="web table-primary text-primary">網頁設計</td>
-                            <td id="phy">體育</td>
-                            <td class="en table-danger text-danger">英文</td>
-                            <td class="math table-info text-info">數學</td>
-                            <td class="python table-warning text-warning">程式語言</td>
+                            <td class="web table-primary text-primary"><i class="mr-2 fas fa-atlas"></i>網頁設計</td>
+                            <td id="phy"><i class="mr-2 fas fa-running"></i>體育</td>
+                            <td class="en table-danger text-danger"><i class="mr-2 fas fa-book"></i>英文</td>
+                            <td class="math table-info text-info"><i class="mr-2 fas fa-calculator"></i>數學</td>
+                            <td class="python table-warning text-warning"><i class="mr-2 fab fa-python"></i>程式語言</td>
                         </tr>
                     </tbody>
                 </table>
