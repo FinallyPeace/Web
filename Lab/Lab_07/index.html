@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Lab 07</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -10,69 +11,213 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
         body {
-            margin: 0px;
             height: 100vh;
             background-color: rgb(238, 230, 212);
             font-family: 'Noto Sans TC', sans-serif;
+            font-weight: bolder;
         }
+        
         header,
         footer {
-            text-align: center;
             font-size: 3rem;
             background-color: black;
             color: white;
         }
+        
+        nav {
+            background-color: rgb(245, 187, 111);
+        }
+        
+        nav ul {
+            list-style: none;
+            text-align: left;
+        }
+        
+        nav li a {
+            color: black;
+        }
+        
+        table {
+            justify-self: center;
+            background-color: white;
+            border-collapse: collapse;
+            width: 80%;
+            height: 80%;
+            border: 3px solid darkgreen;
+        }
+        
+        table tr {
+            color: darkgreen;
+            border: 3px solid darkgreen;
+        }
+        
+        table th,
+        table td {
+            border: 3px solid rgb(158, 0, 163);
+        }
+        
+        caption {
+            color: rgb(51, 59, 163);
+        }
+        
+        .en {
+            background-color: rgb(229, 182, 210);
+            color: hotpink;
+        }
+        
+        .en:hover {
+            color: rgb(229, 182, 210);
+            background-color: hotpink;
+        }
+        
+        .math {
+            background-color: rgb(176, 225, 241);
+            color: rgb(61, 199, 245);
+        }
+        
+        .math:hover {
+            color: rgb(176, 225, 241);
+            background-color: rgb(61, 199, 245);
+        }
+        
+        .web {
+            background-color: rgb(179, 102, 77);
+            color: rgb(182, 65, 29);
+        }
+        
+        .web:hover {
+            color: rgb(179, 102, 77);
+            background-color: rgb(182, 65, 29);
+        }
+        
+        .python {
+            background-color: rgb(255, 245, 188);
+            color: gold;
+        }
+        
+        .python:hover {
+            color: rgb(255, 245, 188);
+            background-color: gold;
+        }
+        
+        #rest {
+            background-color: rgb(156, 214, 182);
+            color: rgb(6, 219, 89);
+        }
+        
+        #rest:hover {
+            color: rgb(156, 214, 182);
+            background-color: rgb(6, 219, 89);
+        }
+        
+        #phy {
+            background-color: rgb(228, 253, 191);
+            color: greenyellow;
+        }
+        
+        #phy:hover {
+            color: rgb(228, 253, 191);
+            background-color: greenyellow;
+        }
+        
+        #none {
+            background-color: rgb(104, 123, 177);
+            color: rgb(40, 79, 177);
+        }
+        
+        #none:hover {
+            color: rgb(104, 123, 177);
+            background-color: rgb(40, 79, 177)
+        }
     </style>
-  </head>
-  <body>
-      <div class="container d-flex flex-column">
-            <header >選課系統</header>
-            <main class="flex-grow-1 flex-row">
-                <nav>登入資訊</nav>
-                <section>
-                    <table border="1">
-                        <caption><b><h4>110年度 上學期</h4></b></caption>
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th>星期一</th>
-                                <th>星期二</th>
-                                <th>星期三</th>
-                                <th>星期四</th>
-                                <th>星期五</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>早上</th>
-                                <td class="en">英文</td>
-                                <td class="math">數學</td>
-                                <td class="web">網頁設計</td>
-                                <td id="none">無</td>
-                                <td class="python">程式語言</td>
-                            </tr>
-                            <tr>
-                                <th>中午</th>
-                                <td id="rest" , colspan="5" ;>吃飯午休</td>
-                            </tr>
-                            <tr>
-                                <th>下午</th>
-                                <td class="web">網頁設計</td>
-                                <td id="phy">體育</td>
-                                <td class="en">英文</td>
-                                <td class="math">數學</td>
-                                <td class="python">程式語言</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-            </main>
-            <footer>Footer</footer>
-      </div>
+    <SCRIPT language="JavaScript">
+        function change() {
+            window.alert('非選課時段，下次請早！');
+        }
+    </SCRIPT>
+</head>
+
+<body class="container-fluid m-0 p-0 d-flex flex-column">
+    <header class="text-center">選課系統</header>
+    <div class="row m-0 p-0 flex-grow-1 d-flex flex-row">
+        <nav class="col-3 col-md-4 col-lg-3">
+            <div>
+                <h3 style="text-align: center;">登入資訊</h3>
+                <ul class="p-2 list list-unstyled">
+                    <li>學號: D0123456</li>
+                    <li>姓名: Lien Jia Lin</li>
+                    <li>班級: 資訊一甲</li>
+                    <li>學分上限: 25</li>
+                    <li>學分下限: 12</li>
+                </ul>
+            </div>
+            <div>
+                <p style="text-align: left; padding-left: 10px;">選課說明</p>
+                <ol>
+                    <li>可在課程公告查看選課代碼及課程資訊</li>
+                    <li>點選已選課表科目名稱，可顯示課程顏色</li>
+                </ol>
+            </div>
+            <div>
+                <p class="p-2 text-left">問題反應或建議</p>
+                <ul class="p-2 list list-unstyled">
+                    <li>聯或電話: 04-1234-5678</li>
+                    <li><a href="mailto:abcdefg@fcu.edu.tw">E-mail: abcdefg@fcu.edu.tw</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="col-8 col-md-8 col-lg-9 d-flex flex-column" style="height: 20vh;">
+            <div id="bar">
+                <input type="button" value="課程公告" onclick="change();">
+                <input type="button" value="我的課表">
+            </div>
+            <div class="d-flex justify-content-center" style="height: 80vh;">
+                <table class="m-5 table table-bordered table-light align-middle text-center">
+                    <caption><h4>110年度 上學期</h4></caption>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th scope="col">星期一</th>
+                            <th scope="col">星期二</th>
+                            <th scope="col">星期三</th>
+                            <th scope="col">星期四</th>
+                            <th scope="col">星期五</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">早上</th>
+                            <td class="en table-danger">英文</td>
+                            <td class="math table-info">數學</td>
+                            <td class="web">網頁設計</td>
+                            <td id="none" class="bg-primary">無</td>
+                            <td class="python table-warning">程式語言</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">中午</th>
+                            <td id="rest" colspan="5" class="table-success">吃飯午休</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">下午</th>
+                            <td class="web">網頁設計</td>
+                            <td id="phy">體育</td>
+                            <td class="en table-danger">英文</td>
+                            <td class="math table-info">數學</td>
+                            <td class="python table-warning">程式語言</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <footer class="text-center">Footer</footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+</body>
+
 </html>
