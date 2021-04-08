@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script src="path/to/script.js"></script>
+    <script>
+        /* JavaScript */
+        function ChangeFontColor() {
+            var OriginalColor = document.getElementById("black").innerHTML;
+            document.getElementById("black").innerHTML = '<font color="blue">' + OriginalColor + '</font>';
+        }
+
+        function ChangeString() {
+            var NewStringValue = document.getElementById("NewString").value;
+            document.getElementById("String").innerHTML = NewStringValue;
+        }
+
+        function StringLength() {
+            var NewStringValue = document.getElementById("NewString").value;
+            document.getElementById("String").innerHTML = NewStringValue.length;
+        }
+    </script>
+</head>
+
+<body>
+    <p id="black">顏色</p>
+    <button onclick="ChangeFontColor()">藍色</button>
+
+    <p>打開Console看移動數值</p>
+    <input type="range" onchange="console.log(this.value)">
+
+    <p id="time">What time is it ?</p>
+    <button onclick="document.getElementById('time').innerHTML = Date()">現在時間</button>
+    
+    <p id="String">初始字串：</p>
+    <input type="text" id="NewString">
+    <button onclick="ChangeString()">變更文字</button>
+    <button onclick="StringLength()">顯示字串長度</button>
+</body>
+
+</html>
