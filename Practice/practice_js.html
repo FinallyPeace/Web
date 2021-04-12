@@ -5,8 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>JavaScript</title>
-    <script src="path/to/script.js"></script>
+    <style>
+        #goTop {
+            position: fixed;
+            z-index: 2;
+            right: 30px;
+            bottom: 30px;
+            /* display: none; */
+            width: 50px;
+            height: 50px;
+            color: white;
+            background: rgb(84, 110, 187, .6);
+            line-height: 50px;
+            border-radius: 50%;
+            transition: all 0.7s;
+            text-align: center;
+        }
+        
+        #goTop:hover {
+            background: rgb(84, 110, 187);
+        }
+    </style>
+
     <script>
         /* JavaScript */
         function ChangeFontColor() {
@@ -23,10 +47,40 @@
             var NewStringValue = document.getElementById("NewString").value;
             document.getElementById("String").innerHTML = NewStringValue.length;
         }
+
+        $(document).ready(function() {
+            $("#btn").click(function() {
+                $("#content").append('+1');
+            });
+            $("#btn2").click(function() {
+                $("#content").toggle();
+            });
+        });
+
+        $(document).ready(function() {
+            $("#goTop").click(function() {
+                $("html,body").animate({
+                    scrollTop: 0
+                }, 600);
+            });
+        });
+
+        // function f() {
+        //     let sum = 0;
+        //     $(".btn3").click(function() {
+        //         $('.money').each(function() {
+        //             sum += parseInt($(this).text);
+        //         });
+        //     });
+        //     document.getElementById("result").innerHTML = sum;
+        // }
     </script>
 </head>
 
-<body>
+<body class="container-fluid m-0 p-0">
+    <a href="#" id="goTop">
+        <i class="fas fa-angle-double-up"></i>
+    </a>
     <p id="black">顏色</p>
     <button onclick="ChangeFontColor()">藍色</button>
 
@@ -35,11 +89,50 @@
 
     <p id="time">What time is it ?</p>
     <button onclick="document.getElementById('time').innerHTML = Date()">現在時間</button>
-    
+
     <p id="String">初始字串：</p>
     <input type="text" id="NewString">
     <button onclick="ChangeString()">變更文字</button>
     <button onclick="StringLength()">顯示字串長度</button>
+
+    <input type="button" name="button" value="只能按一次" onclick="this.disabled=true">
+    <div>
+        <p id="content">HP</p>
+        <button id="btn">補血</button>
+        <button id="btn2">隱形</button>
+    </div>
+
+    <main style="height: 1000vh;">
+
+    </main>
+
+    
+
+
+    <!-- <p class="" style="font-size: larger;">
+        <span class="text-muted" style="font-size: medium;">
+            TWD&nbsp;
+        </span>
+        <span id="money1">
+            10000
+        </span>
+    </p>
+    <button class="btn3" onclick="f()">加入行程</button>
+
+    <p class="" style="font-size: larger;">
+        <span class="text-muted" style="font-size: medium;">
+            TWD&nbsp;
+        </span>
+        <span id="money2">
+            20000
+        </span>
+    </p>
+    <button class="btn3" onclick="f()">加入行程</button>
+
+    <p id="result" style="font-size: larger;">
+
+    </p> -->
+
 </body>
 
 </html>
