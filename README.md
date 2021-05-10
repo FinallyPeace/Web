@@ -27,8 +27,7 @@ Web 基礎程式設計
     {% block reference %}
     {% block feature_explain %}```
     
-    ```js
-    function myFunction () {
-       return 42;
-    }
-    ```
+```javascript
+var s = "JavaScript 語法高亮";
+alert(s);
+```
