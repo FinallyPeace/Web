@@ -8,12 +8,14 @@ Web 基礎程式設計
 ## No Lights
 ![圖片損毀看不到極光]()
 
-    {% extends "index.html" %}
-    {% block title %}
-    {% block style %}
-    {% block script %}
-    {% block alert %}
-    {% block content %}
+```jinja
+{% extends "index.html" %}
+{% block title %}
+{% block style %}
+{% block script %}
+{% block alert %}
+{% block content %}
+```
 
 ```jinja
     {% extends "list.html" %}
@@ -25,7 +27,8 @@ Web 基礎程式設計
     {% block recommend %}
     {% block cost %}
     {% block reference %}
-    {% block feature_explain %}```
+    {% block feature_explain %}
+```
     
 ```javascript
 var s = "JavaScript 語法高亮";
