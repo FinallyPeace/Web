@@ -15,7 +15,7 @@ Web 基礎程式設計
     {% block alert %}
     {% block content %}
 
-    '''{% extends "list.html" %}
+    ```{% extends "list.html" %}
     {% block path %}
     {% block area %}
     {% block schedule_name %}
@@ -24,4 +24,4 @@ Web 基礎程式設計
     {% block recommend %}
     {% block cost %}
     {% block reference %}
-    {% block feature_explain %}'''
+    {% block feature_explain %}```
