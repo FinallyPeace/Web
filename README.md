@@ -8,6 +8,8 @@ Web 基礎程式設計
 ## No Lights
 ![圖片損毀看不到極光]()
 
+## 模板
+- index
 ```jinja
 {% extends "index.html" %}
 {% block title %}
@@ -16,7 +18,7 @@ Web 基礎程式設計
 {% block alert %}
 {% block content %}
 ```
-
+- list
 ```jinja
 {% extends "list.html" %}
 {% block path %}
