@@ -8,6 +8,22 @@ Web 基礎程式設計
 ## No Lights
 ![圖片損毀看不到極光]()
 
-    {% raw  %}
-    {% this %}
-    {% endraw %}
+    {% extends "index.html" %}
+    {% block title %}
+    {% block style %}
+    {% block script %}
+    {% block alert %}
+    {% block content %}
+
+    '''
+    {% extends "list.html" %}
+    {% block path %}
+    {% block area %}
+    {% block schedule_name %}
+    {% block traffic %}
+    {% block hotel %}
+    {% block recommend %}
+    {% block cost %}
+    {% block reference %}
+    {% block feature_explain %}
+    '''
