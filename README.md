@@ -8,12 +8,6 @@ Web 基礎程式設計
 ## No Lights
 ![圖片損毀看不到極光]()
 
-    {% extends "base.html" %}
-    {% block title %}Members{% endblock %}
-    {% block content %}
-      <ul>
-      {% for user in users %}
-        <li><a href="{{ user.url }}">{{ user.username }}</a></li>
-      {% endfor %}
-      </ul>
-    {% endblock %}
+    {% raw  %}
+    {% this %}
+    {% endraw %}
