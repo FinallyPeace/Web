@@ -15,7 +15,7 @@ Web 基礎程式設計
     {% block alert %}
     {% block content %}
 
-    ```jinja
+```jinja
     {% extends "list.html" %}
     {% block path %}
     {% block area %}
