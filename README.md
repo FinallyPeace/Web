@@ -25,3 +25,17 @@ Web 基礎程式設計
     {% block cost %}
     {% block reference %}
     {% block feature_explain %}```
+    
+    <!DOCTYPE html>
+    <title>Title</title>
+
+    <style>body {width: 500px;}</style>
+
+    <script type="application/javascript">
+      function $init() {return true;}
+    </script>
+
+    <body>
+      <p checked class="title" id='title'>Title</p>
+      <!-- here goes the rest of the page -->
+    </body>
