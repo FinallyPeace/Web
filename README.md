@@ -8,11 +8,13 @@ Web 基礎程式設計
 ## No Lights
 ![圖片損毀看不到極光]()
 
-	{% raw %}
-	and 
-	{{ "{% this " }}%}
-	{{ "{{ this " }}}}
-	{% endraw %}
+{% raw %}
+```
+and 
+{{ "{% this " }}%}
+{{ "{{ this " }}}}
+```
+{% endraw %}
    
 - Index
 ```jinja
