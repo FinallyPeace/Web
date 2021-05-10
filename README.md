@@ -27,6 +27,7 @@ Web 基礎程式設計
     {% block reference %}
     {% block feature_explain %}```
     
+    ```html
     <!DOCTYPE html>
     <title>Title</title>
 
@@ -39,4 +40,4 @@ Web 基礎程式設計
     <body>
       <p checked class="title" id='title'>Title</p>
       <!-- here goes the rest of the page -->
-    </body>
+    </body>```
