@@ -18,12 +18,14 @@ and
    
 - Index
 ```jinja
+{% raw %}
 {% extends "index.html" %}
 {% block title %}
 {% block style %}
 {% block script %}
 {% block alert %}
 {% block content %}
+{% endraw %}
 ```
 - List
 ```jinja
