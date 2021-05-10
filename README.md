@@ -7,4 +7,4 @@ Web 基礎程式設計
 ![北極光](./image/acnh_northernlight.jpg)
 ## No Lights
 ![圖片損毀看不到極光]()
-<p>{% block %}</p>
+{% block %}
