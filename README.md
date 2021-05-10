@@ -18,16 +18,16 @@ Web 基礎程式設計
 ```
 
 ```jinja
-    {% extends "list.html" %}
-    {% block path %}
-    {% block area %}
-    {% block schedule_name %}
-    {% block traffic %}
-    {% block hotel %}
-    {% block recommend %}
-    {% block cost %}
-    {% block reference %}
-    {% block feature_explain %}
+{% extends "list.html" %}
+{% block path %}
+{% block area %}
+{% block schedule_name %}
+{% block traffic %}
+{% block hotel %}
+{% block recommend %}
+{% block cost %}
+{% block reference %}
+{% block feature_explain %}
 ```
     
 ```javascript
