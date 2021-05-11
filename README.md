@@ -45,3 +45,8 @@ and
 var s = "JavaScript 語法高亮";
 alert(s);
 ```
+
+```git
+git status
+git rm --cache .\__pycache__
+```
