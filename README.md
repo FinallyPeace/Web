@@ -8,44 +8,6 @@ Web 基礎程式設計
 ## No Lights
 ![圖片損毀看不到極光]()
 
-{% raw %}
-```
-and 
-{{ "{% this " }}%}
-{{ "{{ this " }}}}
-```
-{% endraw %}
-   
-- Index
-```jinja
-{% raw %}
-{% extends "index.html" %}
-{% block title %}
-{% block style %}
-{% block script %}
-{% block alert %}
-{% block content %}
-{% endraw %}
-```
-- List
-```jinja
-{% extends "list.html" %}
-{% block path %}
-{% block area %}
-{% block schedule_name %}
-{% block traffic %}
-{% block hotel %}
-{% block recommend %}
-{% block cost %}
-{% block reference %}
-{% block feature_explain %}
-```
-    
-```javascript
-var s = "JavaScript 語法高亮";
-alert(s);
-```
-
 ```git
 git status
 git rm --cache .\__pycache__
