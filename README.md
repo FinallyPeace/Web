@@ -10,5 +10,5 @@ Web 基礎程式設計
 
 ```git
 git status
-git rm --cache .\__pycache__
+git rm --cached .\__pycache__
 ```
